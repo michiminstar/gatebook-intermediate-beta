@@ -1,16 +1,18 @@
 <%= form_for(@note) do |f| %>
   <% if @note.errors.any? %>
-    <p id="error-explanation"><%= @note.errors.count %>件のエラーがあります。</p>
-    
-    <ul>
-    <% @note.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
+    <div id="error_explanation" class="alert alert-danger">
+      <p><%= @note.errors.count %>件のエラーがあります。</p>
+      
+      <ul>
+      <% @note.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
   <% end %>
 
   ユーザーID
-  <%= f.collection_select :user_id, User.all, :id, :id, {prompt: true}, {class: "form-control"} %>
+  <%= f.collection_select :user_id, User.all, :id, :id, {prompt: true}, {class: "form-control user-id-field"} %>
 
   タイトル
   <%= f.text_field :title, class: "form-control title-field" %>

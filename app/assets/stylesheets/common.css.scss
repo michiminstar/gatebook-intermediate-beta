@@ -19,7 +19,7 @@ a:hover {
 }
 
 .container {
-  width: 960px;
+  width: 900px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -135,9 +135,7 @@ footer small {
 
 /* 「保存」ボタン */
 .primary-btn {
-  width: 250px;
   background-color: #239b76;
-  float: right;
 }
 
 .primary-btn:hover {
@@ -186,6 +184,27 @@ input, textarea, select {
   border: 1px solid #ccc;
 }
 
-.content-field {
-  height: 90px;
+/*　エラーメッセージ　*/
+.alert {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: small;
 }
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+.alert-danger ul li {
+  list-style-type: disc;
+ }
