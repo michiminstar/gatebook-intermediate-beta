@@ -1,6 +1,6 @@
 /* 共通レイアウト ================================ */
 body {
-  padding-top: 60px;
+  padding-top: 70px;
   color: #364a4d;
 }
 
@@ -153,12 +153,12 @@ footer small {
   text-decoration: none;
 }
 
-/*　「削除」ボタン　*/
-.destroy-btn {
+/*　「戻る」ボタン　*/
+.back-btn {
   background-color: #1f89e2;
 }
 
-.destroy-btn:hover {
+.back-btn:hover {
   background-color: #3695e5;
   color: white;
   text-decoration: none;

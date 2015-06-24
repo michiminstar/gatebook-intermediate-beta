@@ -1,12 +1,16 @@
-<h1>投稿の一覧</h1>
+<h1 class="heading">投稿一覧</h1>
+<%= link_to '新規投稿', new_note_path, class: "btn new-note-btn" %>
+
 <ul class="notes">
   <% @notes.each do |note| %>
     <li>
-      <p><%= note.user.name %></p>
-      <p>タイトル</p>
+      <%= note.user.name %>
       <span class="content">
         <%= link_to note.title, note_path(note.id) %>
       </span>
     </li>
   <% end %>
 </ul>
+
+<br>
+
