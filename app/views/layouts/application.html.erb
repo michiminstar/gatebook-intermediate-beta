@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gatebook | 記事投稿SNSサービス</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="navbar">
+  <div class="container">
+    <div id="logo">Gatebook</div>
+    <nav>
+      <ul class="header-right">
+        <li><%= link_to "Top", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Index", notes_path %></li>
+        <li><%= link_to "New", new_note_path %></li>
+        <li><%= link_to "Users", users_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <%= yield %>
+</div> 
+
+
+<div class="container">
+  <footer class="footer">
+    <small>
+      &copy; 2015 Progate, Inc.
+    </small>
+  </footer>
+</div>
+
+</body>
+</html>

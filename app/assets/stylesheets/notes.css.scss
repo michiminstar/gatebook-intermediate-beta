@@ -1,0 +1,45 @@
+// Place all the styles related to the notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 投稿一覧 ================================ */
+.notes {
+  margin: 0;
+}
+
+.notes li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* 投稿 ================================ */
+.notes li {
+  padding: 10px 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+.notes .content {
+  display: block;
+}
+
+.notes .content img {
+  display: block;
+  padding: 5px 0;
+}
+
+aside textarea {
+  height: 120px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.notes-list {
+  width: 58%;
+  float: right;
+}
+
+.notes-list h3 {
+  margin-left: 37px;
+}
