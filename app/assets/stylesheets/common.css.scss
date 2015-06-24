@@ -186,22 +186,21 @@ input, textarea, select {
 
 /*　エラーメッセージ　*/
 .alert {
-  padding: 10px 15px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
   border-radius: 4px;
   font-size: small;
 }
 
 .alert-success {
+  line-height: 40px;
+  padding-left: 15px;
   color: #3c763d;
   background-color: #dff0d8;
-  border-color: #d6e9c6;
 }
 
 .alert-danger {
+  padding: 10px 20px;
   background-color: #f2dede;
-  border-color: #ebccd1;
   color: #a94442;
 }
 
