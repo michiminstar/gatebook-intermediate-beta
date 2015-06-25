@@ -1,16 +1,15 @@
-<p id="notice"><%= notice %></p>
+<p id="notice" class="alert alert-success"><%= notice %></p>
 
-<p>
-  <strong>名前</strong>
-  <%= @user.name %>
-</p>
+<aside class="sidebar">
+  <section>
+    <span class="label">ユーザー</span>
+    <h3 class="user-info"><%= @user.name %></h3>
+  </section>
 
-<p>
-  <strong>メールアドレス</strong>
-  <%= @user.email %>
-</p>
+  <section>
+    <small><%= link_to 'プロフィールを編集', edit_user_path(@user) %></small>
+  </section>
 
-<%= link_to '編集', edit_user_path(@user) %> |
-<%= link_to '戻る', users_path %>
+</aside>
 
 <%= render @notes %>
