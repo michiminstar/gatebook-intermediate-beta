@@ -35,7 +35,7 @@ class NotesController < ApplicationController
 
   def destroy
     @note.destroy
-    redirect_to notes_path, notice: '投稿を削除しました。'
+    redirect_to notes_path
   end
 
   private

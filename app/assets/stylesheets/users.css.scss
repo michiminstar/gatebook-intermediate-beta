@@ -6,3 +6,30 @@
 .name-field, .email-field {
   width: 45%;
 }
+
+/* ユーザー一覧 ================================ */
+.add-user-btn {
+  background-color: #239b76;
+  margin-top: 16px;
+  float: right
+}
+
+.add-user-btn:hover {
+  background-color: #28b086;
+  color: white;
+  text-decoration: none;
+}
+
+/* ユーザーのshowページ ================================ */
+.sidebar { 
+  width: 34%;
+  float: left;
+}
+
+.label {
+  color: #C0C0C2;
+}
+
+.user-info {
+  margin: 10px 0 20px 0;
+}
