@@ -3,8 +3,8 @@
 <ul class="notes">
   <% @notes.each do |note| %>
     <li>
-    <%= image_for(note.user) %>
-      <%= note.user.name %>
+      <%= image_for(note.user) %>
+      <span class="title"><%= note.user.name %></span>
       <span class="content">
         <%= link_to note.title, note_path(note.id) %>
       </span>
