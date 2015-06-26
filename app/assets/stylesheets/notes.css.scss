@@ -18,11 +18,11 @@
   padding: 10px 0;
 }
 
-.notes .title, .notes .content {
+.notes .title, .notes .content, .notes .user-name {
   display: block;
 }
 
-.notes .title {
+.notes .title, .notes .user-name {
   padding-top: 8px;
 }
 .notes img {
