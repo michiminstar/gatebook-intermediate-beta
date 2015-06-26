@@ -23,6 +23,8 @@ class UsersController < ApplicationController
   # POST /users
   def create
     @user = User.new(user_params)
+    file = params[:user][:image]
+    @user.set_image(file)
 
     if @user.save
       redirect_to @user, notice: 'User was successfully created.'
@@ -33,6 +35,8 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1
   def update
+    file = params[:user][:image]
+    @user.set_image(file)
     if @user.update(user_params)
       redirect_to @user, notice: 'User was successfully updated.'
     else

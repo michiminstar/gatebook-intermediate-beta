@@ -4,6 +4,7 @@
 <ul class="notes">
   <% @notes.each do |note| %>
     <li>
+    <%= image_for(note.user) %>
       <%= note.user.name %>
       <span class="content">
         <%= link_to note.title, note_path(note.id) %>
