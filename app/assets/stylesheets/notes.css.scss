@@ -3,9 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* 投稿一覧 ================================ */
-.heading {
-  display: inline-block;
-}
 .notes {
   margin: 0;
 }
@@ -16,29 +13,23 @@
   border-bottom: 1px solid #eaeaea;
 }
 
-.new-note-btn {
-  background-color: #239b76;
-  margin-top: 16px;
-  float: right
-}
-
-.new-note-btn:hover {
-  background-color: #28b086;
-  color: white;
-  text-decoration: none;
-}
 /* 投稿 ================================ */
 .notes li {
   padding: 10px 0;
 }
 
-.notes .content {
+.notes .title, .notes .content {
   display: block;
 }
 
-.notes .content img {
-  display: block;
+.notes .title {
+  padding-top: 8px;
+}
+.notes img {
+  display: inline-block;
   padding: 5px 0;
+  margin-right: 5px;
+  float: left;
 }
 
 aside textarea {

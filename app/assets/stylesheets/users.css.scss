@@ -25,6 +25,20 @@
   padding: 10px 0;
   border-bottom: 1px solid #eaeaea;
 }
+
+.user-list img {
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 5px;
+  float: left;
+}
+
+.user-list a {
+  display: inline-block;
+  margin-top: 22px;
+}
+
+
 /* ユーザーのshowページ ================================ */
 .sidebar { 
   width: 34%;
