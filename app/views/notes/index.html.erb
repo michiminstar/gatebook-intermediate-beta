@@ -1,16 +1,13 @@
-<h1>投稿一覧</h1>
-
+<h1>投稿の一覧</h1>
 <ul class="notes">
   <% @notes.each do |note| %>
     <li>
-      <%= image_for(note.user) %>
-      <span><%= note.user.name %></span>
+      <span class="user-name">
+        <%= note.user.name %>
+      </span>
       <span class="content">
         <%= link_to note.title, note_path(note.id) %>
       </span>
     </li>
   <% end %>
 </ul>
-
-<br>
-

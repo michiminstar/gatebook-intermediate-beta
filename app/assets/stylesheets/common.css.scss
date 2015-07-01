@@ -197,8 +197,10 @@ input, textarea, select {
 }
 
 .alert-success {
+  /*.alertにまとめる？*/
   line-height: 40px;
   padding-left: 15px;
+  /*.alertにまとめる？*/
   color: #3c763d;
   background-color: #dff0d8;
 }
